@@ -1,15 +1,15 @@
-const Customer = require('../Customer.class')
+const Product = require('../Product.class')
 const { http } = require('../../core')
 
 async function getAll() {
-	const customers = []
+	const products = []
 	try {
-		const { data } = await http.get('/Customer')
+		const { data } = await http.get('/Product')
 		const len = data.length
 		for (let i = 0; i < len; i++) {
-			customers.push(new Customer(data[i]))
+			products.push(new Product(data[i]))
 		}
-		return customers
+		return products
 	}
 	catch (err) {
 		if (!err.response) {

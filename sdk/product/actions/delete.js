@@ -1,8 +1,8 @@
 const { http } = require('../../core')
 
-async function update(customer) {
+async function update(product) {
 	try {
-		await http.put(`/Customer/${customer.id}`, customer)
+		await http.delete(`/Product/${product.id}`)
 		return true
 	}
 	catch (err) {

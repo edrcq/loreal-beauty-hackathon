@@ -1,7 +1,6 @@
 const { http } = require('../../core')
 
 async function update(customer) {
-	const customers = []
 	try {
 		await http.delete(`/Customer/${customer.id}`)
 		return true
@@ -10,7 +9,7 @@ async function update(customer) {
 		if (!err.response) {
 			console.error(err)
 		}
-		return customers
+		throw err
 	}
 }
 
