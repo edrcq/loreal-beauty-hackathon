@@ -1,0 +1,23 @@
+{
+  "name": "loreal-beauty-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edrcq/loreal-beauty-hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edrcq/loreal-beauty-hackathon/issues"
+  },
+  "homepage": "https://github.com/edrcq/loreal-beauty-hackathon#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0"
+  }
+}
