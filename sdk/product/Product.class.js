@@ -1,5 +1,6 @@
 class Product {
 	constructor({ eanCode, productName, signatureName, brandName, subBrandName, axisName, subAxisName } = {}) {
+		this.id = eanCode || ""
 		this.eanCode = eanCode || ""
 		this.productName = productName || ""
 		this.signatureName = signatureName || ""

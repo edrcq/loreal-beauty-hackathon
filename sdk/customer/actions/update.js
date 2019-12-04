@@ -2,7 +2,7 @@ const { http } = require('../../core')
 
 async function update(customer) {
 	try {
-		await http.put(`/Customer/${customer.id}`, customer)
+		await http.put(`/Customer/${customer.code}`, customer)
 		return true
 	}
 	catch (err) {

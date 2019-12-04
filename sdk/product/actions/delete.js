@@ -2,7 +2,7 @@ const { http } = require('../../core')
 
 async function update(product) {
 	try {
-		await http.delete(`/Product/${product.id}`)
+		await http.delete(`/Product/${product.eanCode}`)
 		return true
 	}
 	catch (err) {

@@ -1,8 +1,8 @@
 const { http } = require('../../core')
 
-async function update(product) {
+async function update(sale) {
 	try {
-		await http.put(`/Product/${product.eanCode}`, product)
+		await http.delete(`/Sale/${sale.id}`)
 		return true
 	}
 	catch (err) {
