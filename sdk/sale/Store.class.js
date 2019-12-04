@@ -1,5 +1,5 @@
 class Sale {
-	constructor({ id, storeCode, eanCode, customerCode, salesDate, salesQuantity, country, brand } = {}) {
+	constructor({ id, storeCode, eanCode, customerCode, salesDate, salesQuantity } = {}) {
 		this.id = id
 		this.storeCode = storeCode || ""
 		this.eanCode = eanCode || ""
