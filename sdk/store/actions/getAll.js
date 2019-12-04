@@ -9,6 +9,7 @@ async function getAll() {
 		for (let i = 0; i < len; i++) {
 			stores.push(new Store(data[i]))
 		}
+		console.log(stores)
 		return stores
 	}
 	catch (err) {

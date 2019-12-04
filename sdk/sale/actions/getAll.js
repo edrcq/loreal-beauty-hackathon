@@ -1,4 +1,4 @@
-const Sale = require('../Store.class')
+const Sale = require('../Sale.class')
 const { http } = require('../../core')
 
 async function getAll() {
